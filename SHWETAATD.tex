@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+
+\begin{document}
+	\title{Multifunctional Detachable Applications for Drones}	
+	\maketitle
+	
+\textbf{Introduction/Motivation:}\\*
+In this developing country there has been a lot of development in various fields, but one of the least developed field is the Drone based industry in India. Very few companies are trying to develop drone based applications which can be very helpful for the society. In recent days companies like Amazon and Zomato have started developing their drones for delivery service in India but still there hasn’t been an exponential growth in this field. On paper, it is easy to say that the applications of the drones whether they be land based drones, aerial drones, underwater or aquatic drones, their applications are limitless. But to develop these applications in real life is quite tedious. So with this goal we have come up with our idea being Multifunctional Detachable Applications for Drones. The planned applications to be implemented on drones are:
+\begin{itemize}
+\item[$\cdot$] All Terrain Attachment (Making the Aerial drone capable of running on ground).
+\item[$\cdot$] Pollution and weather monitoring and Mapping.
+\item[$\cdot$] LIDAR Based Mapping and Military Surveillance.
+\item[$\cdot$] Fire Fighting combined with Solar Panel Cleaning.
+\item[$\cdot$] Agricultural Watering with Pesticides Spraying.
+\item[$\cdot$] Secured Delivery Attachment.
+\end{itemize}
+
+
+\textbf{Market Research / Literature Survey:}\\*
+The “All Terrain Attachment” is aimed for many fields including Military, Transportation, Deliveries, Geographical analysis. This attachment of all terrain robot will also make the drone as India’s first All Terrain Drone. 
+Air quality in India is so poor that 2 million deaths in the country last year can be attributed to air pollution. This is a major concern for Indian population.
+When a sky scraper catches fire due to short circuit it is not possible for the fire brigade men to go up to a high extent and cool down the fire. The same attachment on the drone can also be used for cleaning solar panels.
+The methods of irrigation currently are “Drip Irrigation” and “Sprinkle Irrigation”. Implementation cost of drip irrigation per 1 acre is around 70,000 INR. In order to make this more efficient and cheaper we are developing the attachment for watering and pesticides spraying.
+In order to make delivery system more efficient drones can be used for delivery which can be done faster by travelling in the air. Also this system can be used for organ deliveries. \\*
+
+\textbf{Hardware requirements:}\\*
+
+\begin{tabular}{||l|r||}
+\hline
+COMPONENTS &  QTY \\
+\hline
+Li-Po Batteries &  3 \\
+PCA9685 SERVO MOTOR DRIVER &  1 \\
+MG996 SERVO MOTORS &  4 \\
+SIDE SHAFT DC MOTORS &  4 \\
+DHT11 Sensor &  1\\
+MQ Sensors (2, 7, 8, 9, 135, 136, 137, 138) &  1 each \\
+LIDAR &  1 \\	
+Raspberry Pi &  1 \\
+FPV Camera and Goggles &  1 \\
+Water Pump &  2 \\
+QR Code/ Barcode Scanner  &  1 \\
+Electronic Lock &  1 \\
+\hline
+\end{tabular}\\* \\*
+
+\textbf{Software requirements:}\\*
+\begin{itemize}
+\item[$\cdot$] Mission Planner
+\item[$\cdot$] Fusion 360
+\item[$\cdot$] Arduino
+\item[$\cdot$] Flash Print
+\item[$\cdot$] APM Planner
+\end{itemize}
+
+\textbf{Implementation:}\\*
+As mentioned earlier our aim is not to develop a drone but to develop multiple applications that can be developed on a drone. For this project we have taken a sample quad-copter which has a payload capacity of 4 kilograms for which we are developing these attachments. Also we are going to implement some of these attachments on a ground terrain robot. 
+
+\begin{itemize}
+\item[$\cdot$] ALL TERRAIN ATTACHMENT \\*
+\end{itemize}
+This is most important attachment as this technology is developed only by few countries and this being the First one in India. This attachment includes 4 tanks based track belts connected to movable arms and side shaft DC motors. With the help of these motors the attachment will enable the drone to run on any surface such as mud, staircase or hilly regions.
+
+
+\begin{itemize}
+\item[$\cdot$] POLLUTION AND WEATHER MONITORING AND MAPPING \\*
+\end{itemize}
+Attachment when combined with Drone or All Terrain Drone will be capable of measuring various amounts of gases present in the air and also monitor the weather by measuring the humidity, temperature and pressure. For measuring different amount of gases we are using different types of MQ gas sensors where each sensor measures different types of gasses. For measuring the temperature and humidity in the atmosphere we are using the DHT-11 Sensor and for measuring the air pressure we are using the barometric pressure sensor. All this data will be transmitted live to the user by using either WiFi or Lora.
+
+
+\begin{itemize}
+\item[$\cdot$] LIDAR BASED MAPPING AND MILITARY SURVEILLANCE. \\*
+\end{itemize}
+LIDAR, which stands for Light Detection and Ranging, is a remote sensing method that uses light in the form of a pulsed laser to measure distance. These light pulses combined with other data recorded by the airborne system generate precise, two-dimensional information about the surrounding area. 
+
+\begin{itemize}
+\item[$\cdot$] FIRE FIGHTING COMBINED WITH SOLAR PANEL CLEANING. \\*
+\end{itemize}
+In this system we are connecting a powerful water pump which will be able to shoot water with very high pressure in a single direction during firefighting mode and when used for solar panel cleaning, it will shoot water with a very less pressure and a ground robot will clean the panels using the wipes attached on the back of the robot.
+
+\begin{itemize}
+\item[$\cdot$] AGRICULTURAL WATERING WITH PESTICIDES SPRAYING. \\*
+\end{itemize}
+This attachment is similar to firefighting attachment only difference being that instead of a unidirectional water shooting we are using quad water spraying system which will ensure that the water is spread evenly over a wide range of area in a controlled manner. This will save lot of water especially during the drought conditions. Also while spraying pesticides we will spray the pesticides in a controlled manner so that all the crops receive right amount of fertilizers without harming the crop growth which will lead to more productive farming.
+
+\begin{itemize}
+\item[$\cdot$] SECURED DELIVERY ATTACHMENT \\*
+\end{itemize}
+This attachment focuses on delivery any small or medium sized package from one place to the other without being obstructed by traffic. This system includes a barcode or QR code scanner which will be sent to the customer by online shopping app like Amazon and when the drone arrives near the customer only thing he or she has to do is scan the code using the scanner on the attachment and the electronic lock fitted on the door of the attachment will open.\\*
+
+\textbf{Feasibility:} \\*
+The costing of this entire system is around INR 70,000 and its price can greatly reduce to around INR 50,000 for mass production. If we calculate the price of nodes to be implemented at 10 to 15 locations then it will cost around INR 50,000 to INR 60,000.So the cost structure will be feasible as we are also providing with surveillance as well and if we want we can send this system to more than 20 locations in one flight. As it is an autonomous system as we have to upload only the co-ordinates at which it has to monitor the pollution and nothing else. Also this system is very user friendly as its user interface is easy to understand. If the customer wants any other application to be implemented along with this system it can be done as well. \\* \\* \\* \\* \\* \\* \\* \\*
+
+
+
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics{atd1.png}
+	\caption{ Diagram 1} 
+	\includegraphics{atd2.png}
+	\caption{ Diagram 2} 
+
+
+	\label{image_1} % Label is used for referencing
+	\label{image_2} % Label is used for referencing
+
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics{atd3.png}
+	\caption{ Diagram 3} 
+\includegraphics{atd4.png}
+\caption{ Diagram 4} 
+
+	\label{image_3} % Label is used for referencing
+\label{image_4} % Label is used for referencing
+
+\end{figure}
+
+\begin{figure}
+	\centering
+\includegraphics{atd5.png}
+\caption{ Diagram 5} 
+\includegraphics{atd6.png}
+\caption{ Diagram 6} 
+\label{image_5} % Label is used for referencing
+\label{image_6} % Label is used for referencing
+\end{figure}
+
+
+
+\textbf{References:}\\*
+\begin{itemize}
+	\item[$\cdot$] Umair Irfan. (2018). Why India’s air pollution is so horrendous [Online].
+	Link: https://www.vox.com/2018/5/8/17316978/india-pollution-levels-air-delhi-health
+	\item[$\cdot$] Olivia Goldhill (2018). Air pollution in India caused 1.2 million deaths last year [Online].
+	Link: https://qz.com/1489086/air-pollution-in-india-caused-1-2-million-deaths-last-year/
+	\item[$\cdot$] Richa Pinto (2019). Mumbai fire brigade commissions 90m hi-tech ladder to reach 30 storeys.
+	Link:http://timesofindia.indiatimes.com/articleshow/48504835.cms?utm\_source=contentofinterest\&utm\_medium=text\&utm\_campaign=cppst
+	\item[$\cdot$] Team ProductLine (2019). Solar panel cleaning services: From robots, kits to water jet pressure.
+	Link://economictimes.indiatimes.com/articleshow/69230349.cms?utm\_source=contentofinterest\&utm\_medium=text\&utm\_campaign=cppst
+\end{itemize}
+
+
+\end{document}
+\\
+58804890+Shweta4365@users.noreply.github.com
